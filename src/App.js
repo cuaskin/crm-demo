@@ -2,7 +2,6 @@ import React from 'react';
 
 import './App.css';
 import Navbar from './layout/Navbar';
-import Footer from './components/Footer';
 import Employees from './Container/Employees';
 import AddEmployee from './components/forms/AddEmployee';
 import Test from './components/Test';
@@ -25,7 +24,6 @@ function App() {
         <Route exact path="/edit/:id" component={UpdateEmployee}/>
         <Route component={NotFound} />
       </Switch>
-      <Footer />
     </div>
   </Router>
   );
