@@ -3,29 +3,29 @@
     {
       "name": "Selim Kara",
       "job": "Taş",
-      "salary": 5000,
+      "salary": 8000,
       "experience": "3",
       "id": "XKXSTug"
     },
     {
-      "name": "Cüneyt Aşkın",
+      "name": "Selda TARALI",
       "job": "Frontend",
-      "salary": 0,
+      "salary": 4500,
       "experience": "0-1",
       "id": "H7YlgqJ"
     },
     {
       "name": "Sinem Yenice",
       "job": "Database Expert",
-      "salary": 7000,
-      "experience": "8",
+      "salary": 5000,
+      "experience": "1",
       "id": "dBQpVQY"
     },
     {
-      "name": "Pınar AŞKIN",
+      "name": "Pınar KAZ",
       "job": "Frontend Developer",
       "salary": 4500,
-      "experience": "2",
+      "experience": "1",
       "id": "yQ575Rc"
     },
     {
@@ -38,16 +38,9 @@
     {
       "name": "Selin TAŞ",
       "job": "İnsan Kaynakları",
-      "salary": 0,
+      "salary": 5000,
       "experience": "1",
       "id": "Vxf0W_d"
-    },
-    {
-      "name": "Mehmet AŞKIN",
-      "job": "Bilgisayar Mühendisliği",
-      "salary": 8499,
-      "experience": "4",
-      "id": "hkmg2df"
     }
   ],
   "messages": [
