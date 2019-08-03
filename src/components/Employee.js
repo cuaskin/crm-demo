@@ -4,7 +4,7 @@ import UserConsumer from "../context";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-class User extends React.Component {
+class Employee extends React.Component {
     constructor(props) {
         super(props);
 
@@ -67,18 +67,18 @@ class User extends React.Component {
     }
 }
 
-User.propTypes = {
+Employee.propTypes = {
     name: PropTypes.string.isRequired,
     job: PropTypes.string.isRequired,
     experience: PropTypes.string.isRequired,
     salary: PropTypes.number.isRequired
 }
 
-User.defaultProps = {
+Employee.defaultProps = {
     name: "null",
     job: "null",
     experience: "null",
     salary: null
 }
 
-export default User;
+export default Employee;

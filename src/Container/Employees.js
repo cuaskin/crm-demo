@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import UserConsumer from "../context";
-import User from '../components/User';
+import Employee from '../components/Employee';
 import Title from '../components/Title';
 
-export default class Users extends Component {
+export default class Employees extends Component {
 
     render() {
         return (
@@ -19,7 +19,7 @@ export default class Users extends Component {
                                 <Title title={"Employee İnformation"}/>
                                 {
                                     users.map((user) =>
-                                        <User
+                                        <Employee
                                             key={user.id}
                                             id={user.id}
                                             name={user.name}

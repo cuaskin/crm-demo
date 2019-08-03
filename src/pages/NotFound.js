@@ -7,7 +7,7 @@ export default function NotFound() {
     }
     return (
         <div style={style}>
-            404 Not Found
+            404 Not Found.
         </div>
     )
 }
