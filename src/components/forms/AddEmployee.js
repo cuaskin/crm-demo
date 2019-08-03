@@ -21,7 +21,7 @@ const Animation = posed.div({
     }
 });
 
-class AddUser extends Component {
+class AddEmployee extends Component {
     state = {
         isVisible: false,
         name: "",
@@ -41,21 +41,17 @@ class AddUser extends Component {
         })
     }
 
-    addUser = async (dispatch, e) => {
+    addEmployee = async (dispatch, e) => {
         e.preventDefault();
 
         const { name, job, salary, experience } = this.state;
-        const newUser = {
+        const newEmployee = {
             //id: uniqid(),
             name,
             job,
             salary: parseInt(salary),
             experience
         }
-
-
-
-        console.log("validateForm:", !this.validateForm());
 
         if (!this.validateForm()) {
             this.setState({
@@ -72,8 +68,7 @@ class AddUser extends Component {
             error: false
         })
 
-        const response = await axios.post("http://localhost:8080/users", newUser);
-        console.log("New User:", response.data);
+        const response = await axios.post("http://localhost:8080/users", newEmployee);
         dispatch({ type: "ADD_EMPLOYEE", payload: response.data });
 
         //Redirect
@@ -114,7 +109,7 @@ class AddUser extends Component {
                                     </div>
                                     <Animation pose={isVisible ? 'visible' : 'hidden'}>
                                         <div className="card-body">
-                                            <form onSubmit={this.addUser.bind(this, dispatch)}>
+                                            <form onSubmit={this.addEmployee.bind(this, dispatch)}>
                                                 <div className="form-group">
                                                     <label htmlFor="name">Name</label>
                                                     <input
@@ -169,16 +164,13 @@ class AddUser extends Component {
                                         </div>
                                     </Animation>
                                 </div>
-
                             </div>
-
                         )
                     }
                 }
             </UserConsumer>
         )
-
     }
 }
 
-export default AddUser;
+export default AddEmployee;

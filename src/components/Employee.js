@@ -27,7 +27,7 @@ class Employee extends React.Component {
     }
 
     componentWillUnmount() {
-        console.log("Component Will Unmount");
+        //console.log("Component Will Unmount");
     }
 
     render() {
