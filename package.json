@@ -1,6 +1,6 @@
 {
   "name": "crm-demo",
-  "author":"Cüneyt Aşkın",
+  "author": "Cüneyt Aşkın",
   "version": "0.1.0",
   "homepage": "https://cuaskin.github.io/crm-demo/",
   "private": true,
@@ -17,8 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.0"
+    "gh-pages": "^2.0.1",
+    "parcel-bundler": "^1.12.3"
   }
 }
