@@ -37,8 +37,7 @@ export class UserProvider extends Component {
     }
 
     componentDidMount = async () => {
-        //const response = await axios.get("http://localhost:8080/users");
-        const response = await axios.get("https://github.com/cuaskin/crm-demo/blob/master/api/db.json/users");
+        const response = await axios.get("http://localhost:8080/users");
         console.log("data", response.data);
         this.setState({
             users: response.data
