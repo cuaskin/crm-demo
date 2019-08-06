@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import UserConsumer from "../context";
 import Employee from '../components/Employee';
 import Title from '../components/Title';
+import SearchBar from '../components/SearchBar';
 
 export default class Employees extends Component {
 
     render() {
-        return (
-            
+        return (          
             <UserConsumer>
                 {
                     value => {
@@ -17,6 +17,7 @@ export default class Employees extends Component {
 
                             <div>
                                 <Title title={"Employee İnformation"}/>
+                                <SearchBar/>
                                 {
                                     users.map((user) =>
                                         <Employee
