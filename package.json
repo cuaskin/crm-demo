@@ -5,7 +5,7 @@
   "homepage": "https://cuaskin.github.io/crm-demo/",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-pose": "^4.0.8",
